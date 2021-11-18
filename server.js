@@ -26,7 +26,7 @@ app.listen(PORT, () => console.log(`server running on port ${PORT}`));
 
 // routes
 app.get("/", (req, res) => {
-  res.json({ my: "aryan" });
+  res.json({ message: "This is an API server" });
 });
 app.use("/api", routes);
 
