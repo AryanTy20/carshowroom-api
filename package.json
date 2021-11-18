@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "esm server.js"
+    "start": "node -r esm server.js"
   },
   "keywords": [],
   "author": "",
