@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "dev": "nodemon -r esm server.js",
-    "start": "nodemon -r esm server.js"
+    "start": "esm server.js"
   },
   "keywords": [],
   "author": "",
