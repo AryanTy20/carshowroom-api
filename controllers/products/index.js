@@ -1,10 +1,9 @@
 import joi from "joi";
 import fs from "fs";
-import { HOST, APP_PORT } from "../../config";
+import { HOST } from "../../config";
 import { AddValidate } from "../../validator/ProductValidator";
 import Products from "../../models/products";
 import CustomError from "../../services/CustomError";
-import { stdout } from "process";
 
 export const ProductController = {
   // add data
@@ -12,7 +11,7 @@ export const ProductController = {
     let fname = new Array();
     let imgpath = new Array();
     req.files.map((data, i) => {
-      imgpath[i] = `${HOST}:${APP_PORT}/cars/${data.filename}`;
+      imgpath[i] = `${HOST}:${APP_port}/cars/${data.filename}`;
       fname[i] = data.filename;
     });
 

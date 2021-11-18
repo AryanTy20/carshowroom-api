@@ -21,6 +21,7 @@ dbConnect();
 
 // ports
 const PORT = process.env.PORT || APP_PORT;
+global.APP_port = PORT;
 app.listen(PORT, () => console.log(`server running on port ${PORT}`));
 
 // routes
